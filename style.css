@@ -4,20 +4,21 @@
   color: white;
 }
 
-/* COLOR */
+/* --- COLORS --- */
 html {
   --blue: rgba(74, 128, 190, 0.87);
   --orange: rgb(255, 167, 2);
 }
 
-/* BASE STYLES */
+/*--- BASE STYLES --- */
 body {
   width: 100vw;
   height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 6fr 3fr;
 }
 
 header {
-  height: 10%;
   padding: 10px;
   background-color: var(--blue);
   display: grid;
@@ -34,16 +35,43 @@ nav {
 }
 
 main {
-  height: 60%;
   padding: 20px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
 }
 
 footer {
-  height: 30%;
+  padding: 10px;
   background-color: var(--blue);
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  align-items: center;
 }
 
-/* MAIN STYLES */
+/* --- MAIN STYLES --- */
+h2 {
+  font-size: 40px;
+  color: var(--blue);
+}
+
+span {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
 #logo {
   font-size: 28px;
   font-weight: 600;
@@ -56,32 +84,19 @@ footer {
 }
 
 #intro {
-  height: 50%;
-}
-
-h2 {
-  font-size: 40px;
-  color: var(--blue);
-  margin: 10px;
-}
-
-p {
-  font-size: 20px;
-  color: black;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
 }
 
 #social-media {
-  height: 50%;
-}
-
-span {
-  color: var(--blue);
-  font-weight: 600;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .button {
   width: 200px;
   height: 50px;
+  margin-right: 10px;
 
   font-size: 20px;
   background-color: transparent;
@@ -107,4 +122,9 @@ span {
 
 .youtube {
   background-color: red;
+}
+
+.features-items {
+  font-weight: 600;
+  margin: 5px;
 }
