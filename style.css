@@ -1,1 +1,110 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
 
+/* COLOR */
+html {
+  --blue: rgba(74, 128, 190, 0.87);
+  --orange: rgb(255, 167, 2);
+}
+
+/* BASE STYLES */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  height: 10%;
+  padding: 10px;
+  background-color: var(--blue);
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: 60%;
+  padding: 20px;
+}
+
+footer {
+  height: 30%;
+  background-color: var(--blue);
+}
+
+/* MAIN STYLES */
+#logo {
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navi-link {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#intro {
+  height: 50%;
+}
+
+h2 {
+  font-size: 40px;
+  color: var(--blue);
+  margin: 10px;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+
+#social-media {
+  height: 50%;
+}
+
+span {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+
+  font-size: 20px;
+  background-color: transparent;
+  border: solid black 1px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.membership {
+  color: var(--orange);
+  background-color: transparent;
+  border: solid var(--orange) 2px;
+  box-shadow: none;
+}
+
+.instagram {
+  background-color: rgb(105, 33, 105);
+}
+
+.facebook {
+  background-color: rgb(5, 95, 199);
+}
+
+.youtube {
+  background-color: red;
+}
