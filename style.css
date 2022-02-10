@@ -129,8 +129,11 @@ h3 {
 ul {
   list-style: none;
 }
+li {
+  margin-bottom: 5px;
+}
 
 .features-items {
   font-weight: 600;
-  margin: 5px;
+  text-decoration: none;
 }
