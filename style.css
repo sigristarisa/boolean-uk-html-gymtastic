@@ -4,13 +4,6 @@
   color: white;
 }
 
-/* --- COLORS --- */
-html {
-  --blue: rgba(74, 128, 190, 0.87);
-  --orange: rgb(255, 167, 2);
-}
-
-/*--- BASE STYLES --- */
 body {
   width: 100vw;
   height: 100vh;
@@ -18,6 +11,14 @@ body {
   grid-template-rows: 1fr 6fr 3fr;
 }
 
+/* --- COLORS --- */
+html {
+  --blue: rgba(74, 128, 190, 0.87);
+  --orange: rgb(255, 167, 2);
+}
+
+/*--- BASE STYLES --- */
+/* header navi bar*/
 header {
   padding: 10px;
   background-color: var(--blue);
@@ -34,12 +35,24 @@ nav {
   justify-content: center;
 }
 
+/* main content */
 main {
   padding: 20px;
   display: grid;
   grid-template-rows: 2fr 1fr;
 }
 
+#intro {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#social-media {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* footer */
 footer {
   padding: 10px;
   background-color: var(--blue);
@@ -48,30 +61,8 @@ footer {
   align-items: center;
 }
 
-/* --- MAIN STYLES --- */
-h2 {
-  font-size: 40px;
-  color: var(--blue);
-}
-
-span {
-  color: var(--blue);
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-p {
-  font-size: 20px;
-  color: black;
-}
-
-ul {
-  list-style: none;
-}
-
+/* --- ELEMENTS STYLES --- */
+/* header navi bar*/
 #logo {
   font-size: 28px;
   font-weight: 600;
@@ -83,14 +74,20 @@ ul {
   text-decoration: none;
 }
 
-#intro {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
+/* main content */
+h2 {
+  font-size: 40px;
+  color: var(--blue);
 }
 
-#social-media {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+span {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+p {
+  font-size: 20px;
+  color: black;
 }
 
 .button {
@@ -122,6 +119,15 @@ ul {
 
 .youtube {
   background-color: red;
+}
+
+/* footer */
+h3 {
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
 }
 
 .features-items {
